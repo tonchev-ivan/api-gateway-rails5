@@ -1,0 +1,13 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: dummy
+  socket: /var/run/mysqld/mysqld.sock
+  host: 127.0.0.1
+  port: 3306
+
+development:
+  <<: *default
+  database: Api-Gateway-Rails5_development
